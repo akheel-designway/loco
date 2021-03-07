@@ -1,0 +1,16 @@
+
+<div class="float-right">{{itemCount}} items / ${{amount.toFixed(2)}}</div>
+<div class="row">
+    <div class="col">
+      <div class="row">
+          <ng-container *ngFor="let p of products; let i = index">
+              <div class="col">
+                <product-card [product]="p"  (valueChange)='displayCounter($event)'></product-card>
+              </div>
+              <div *ngIf="(i + 1) % 2 ===0" class="w-150"></div>
+          </ng-container>
+        </div>
+    </div>
+  </div>
+  
+  
