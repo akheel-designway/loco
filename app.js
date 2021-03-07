@@ -53,8 +53,8 @@ if (app.get('env') === 'production') {
 }
 
 var corsOptions = {
-  origin: true,
-  credentials: true
+  origin: false,
+  credentials: false
 
 }
 
